@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-public class TestNameTest {
+public class JunitTestNameTest {
 
     @Test
     void under_score_remove() {
