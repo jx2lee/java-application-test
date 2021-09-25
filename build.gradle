@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
@@ -21,12 +22,18 @@ test {
     testLogging {
         events "PASSED", "SKIPPED", "FAILED", "STANDARD_OUT", "STANDARD_ERROR"
     }
-
     useJUnitPlatform()
 }
 
-task devTest(type: Test) {
+
+task real(type: Test) {
     useJUnitPlatform {
-        includeTags 'dev'
+        includeTags 'real'
+    }
+}
+
+task dev(type: Test) {
+    useJUnitPlatform {
+        includeTags "dev"
     }
 }
