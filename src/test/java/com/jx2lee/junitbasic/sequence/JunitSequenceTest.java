@@ -1,4 +1,4 @@
-package com.jx2lee.junitbasic.testsequence;
+package com.jx2lee.junitbasic.sequence;
 
 import com.jx2lee.junitbasic.Class;
 import org.junit.jupiter.api.*;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class JunitTestSequenceTest {
+public class JunitSequenceTest {
 
     @Order(2)
     @Test
