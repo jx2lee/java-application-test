@@ -12,5 +12,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Test
 @Tag("real")
-public @interface realTest {
+public @interface RealTest {
 }
