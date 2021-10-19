@@ -43,7 +43,7 @@ public class JunitAssumptionsTest {
             assertNotNull(aClass, () -> "aClass 는 Null 이 아니다.");
         });
 
-        assertNull(aClass, () -> "aClass 는 Null 이 아니다.");
+        assertNotNull(aClass, () -> "aClass 는 Null 이 아니다.");
 
     }
 
