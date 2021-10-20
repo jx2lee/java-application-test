@@ -15,6 +15,7 @@ repositories {
 dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     implementation 'junit:junit:4.13.1'
+    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.5.4'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.3.1'
