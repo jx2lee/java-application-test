@@ -26,7 +26,7 @@ class MockitoBasicTest {
     void 구현체를_직접_생성하면서_테스트하는_경우() {
         MemberService memberService = new MemberService() {
             @Override
-            public void validate(Long MemberId) throws InvalidMemberException {
+            public void validate(Long MemberId) {
             }
 
             @Override

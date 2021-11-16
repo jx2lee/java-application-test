@@ -22,8 +22,8 @@ public class MockitoBasicWithExtensionTest {
     StudyRepository studyRepository;
 
     @Test
-    @DisplayName("Extension_을_사용하기_위해_Annotation_추가_후_Mock_Annotation_으로_테스트한다")
-    void Extension_을_사용하기_위해_Annotation_추가_후_Mock_Annotation_으로_테스트한다() {
+    @DisplayName("Extension_을_사용하기_위해_Annotation_추가_후_테스트한다")
+    void Extension_을_사용하기_위해_Annotation_추가_후_테스트한다() {
         StudyService studyService = new StudyService(memberService, studyRepository);
         assertNotNull(studyService);
     }
