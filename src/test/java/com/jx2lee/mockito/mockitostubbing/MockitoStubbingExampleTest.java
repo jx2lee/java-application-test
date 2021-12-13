@@ -32,7 +32,6 @@ public class MockitoStubbingExampleTest {
 
         Study study = new Study("jx2lee");
 
-
         // TODO memberService 객체에 findById 메소드를 1L 값으로 호출하면 Optional.of(member) 객체를 리턴하도록 Stubbing
         Mockito.lenient().when(memberService.findById(1L))
                 .thenReturn(Optional.of(member));

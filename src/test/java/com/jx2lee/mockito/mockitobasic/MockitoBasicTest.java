@@ -2,7 +2,6 @@ package com.jx2lee.mockito.mockitobasic;
 
 import com.jx2lee.mockito.domain.Member;
 import com.jx2lee.mockito.domain.Study;
-import com.jx2lee.mockito.member.InvalidMemberException;
 import com.jx2lee.mockito.member.MemberService;
 import com.jx2lee.mockito.study.StudyRepository;
 import com.jx2lee.mockito.study.StudyService;
@@ -16,7 +15,7 @@ import org.springframework.data.domain.Sort;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.mock;
 
 class MockitoBasicTest {
@@ -32,6 +31,13 @@ class MockitoBasicTest {
             @Override
             public Optional<Member> findById(Long MemberId) {
                 return Optional.empty();
+            }
+
+            @Override
+            public void notify(Study study) {
+            }
+            @Override
+            public void notify(Member member) {
             }
         };
 
