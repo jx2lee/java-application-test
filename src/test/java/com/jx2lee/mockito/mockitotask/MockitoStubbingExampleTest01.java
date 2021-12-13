@@ -1,4 +1,4 @@
-package com.jx2lee.mockito.mockitostubbing;
+package com.jx2lee.mockito.mockitotask;
 
 import com.jx2lee.mockito.domain.Member;
 import com.jx2lee.mockito.domain.Study;
@@ -16,7 +16,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
-public class MockitoStubbingExampleTest {
+public class MockitoStubbingExampleTest01 {
 
     @Test
     @DisplayName("아래_TODO_를_만족하는_테스트_코드를_작성한다")

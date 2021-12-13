@@ -1,4 +1,5 @@
 package com.jx2lee.mockito.study;
 
-public class StudyStatus {
+public enum StudyStatus {
+    DRAFT, OPENED, STARTED, ENDED
 }
